@@ -24,6 +24,19 @@ Inspired by [tildeio/router.js](https://github.com/tildeio/router.js) and [Tom D
 		setup: function(model){ ... }
 	};
 
+or, maybe
+
+	route('/user/:id')
+		.model(function(params){ ... })
+		.setup(function(model){ ... })
+
+		// appendTo receive a template that can be a string or document fragment
+		.appendTo(document.getElementById('viewport'));
+
+In example, developer can use underscore's templates engine and pass template's function to `setup` method
+
+Maybe, `setup` method should be called `template`?
+
 ## Dependencies
 
 On first sprint I can use my monads implementation and template core (which should be completed asap).
