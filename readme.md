@@ -8,9 +8,10 @@ Inspired by [tildeio/router.js](https://github.com/tildeio/router.js) and [Tom D
 
 ## Key concepts
 
- * Functional style
+ * Functional style (FRP, maybe)
  * URL-driven
  * Declarative templates
+ * Lightweight solution
 
 ## Gists
 
@@ -31,6 +32,7 @@ or, maybe
 		.setup(function(model){ ... })
 
 		// appendTo receive a template that can be a string or document fragment
+		// document fragment's capabilities need to be deeply investigated (MDN)
 		.appendTo(document.getElementById('viewport'));
 
 In example, developer can use underscore's templates engine and pass template's function to `setup` method
