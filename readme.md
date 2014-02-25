@@ -15,25 +15,29 @@ Inspired by [tildeio/router.js](https://github.com/tildeio/router.js) and [Tom D
 
 ## Gists
 
-	route('/user/:id').to('showUser');
+```javascript
+route('/user/:id').to('showUser');
 
-	handlers.showUser = {
-		// model :: Params -> Model
-		model: function(params){ ... },
+handlers.showUser = {
+	// model :: Params -> Model
+	model: function(params){ ... },
 
-		// setup :: Model -> Template
-		setup: function(model){ ... }
-	};
+	// setup :: Model -> Template
+	setup: function(model){ ... }
+};
+```
 
 or, maybe
 
-	route('/user/:id')
-		.model(function(params){ ... })
-		.setup(function(model){ ... })
+```javascript
+route('/user/:id')
+	.model(function(params){ ... })
+	.setup(function(model){ ... })
 
-		// appendTo receive a template that can be a string or document fragment
-		// document fragment's capabilities need to be deeply investigated (MDN)
-		.appendTo(document.getElementById('viewport'));
+	// appendTo receive a template that can be a string or document fragment
+	// document fragment's capabilities need to be deeply investigated (MDN)
+	.appendTo(document.getElementById('viewport'));
+```
 
 In example, developer can use underscore's templates engine and pass template's function to `setup` method
 
