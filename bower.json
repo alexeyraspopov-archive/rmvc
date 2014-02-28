@@ -1,0 +1,20 @@
+{
+  "name": "rmvc",
+  "version": "0.0.1",
+  "homepage": "https://github.com/alexeyraspopov/rmvc",
+  "authors": [
+    "Avenger7x <avenger7x13@gmail.com>"
+  ],
+  "description": "Router-Model-View-Controller prototype",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "monad": "alexeyraspopov/monad#~0.1.0"
+  }
+}
