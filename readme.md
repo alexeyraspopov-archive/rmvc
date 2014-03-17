@@ -32,16 +32,14 @@ or, maybe
 ```javascript
 route('/user/:id')
 	.model(function(params){ ... })
-	.setup(function(model){ ... })
+	.template(function(model){ ... })
 
 	// appendTo receive a template that can be a string or document fragment
 	// document fragment's capabilities need to be deeply investigated (MDN)
 	.appendTo(document.getElementById('viewport'));
 ```
 
-In example, developer can use underscore's templates engine and pass template's function to `setup` method
-
-Maybe, `setup` method should be called `template`?
+In example, developer can use underscore's templates engine and pass template's function to `template` method
 
 ## Dependencies
 

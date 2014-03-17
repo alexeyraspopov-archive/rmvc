@@ -14,5 +14,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alexeyraspopov/rmvc/issues"
+  },
+  "devDependencies": {
+    "underscore": "~1.6.0"
   }
 }
